@@ -73,4 +73,8 @@ class Endereco {
     public void setCep(String cep) {
         this.cep = cep;
     }
+    
+    public String getFullAddress() {
+        return "Logradouro: " + this.logradouro + ", nº " + this.numero + " - " + this.complemento + "(" + this.bairro + "|" + this.cidade + ")";
+    }
 }
